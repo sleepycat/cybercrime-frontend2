@@ -1,0 +1,26 @@
+{
+  "the scam": {
+    "origin": [
+      [
+        "src/p2/ScammerDetailsPage.js",
+        19
+      ]
+    ]
+  },
+  "Add suspect clues": {
+    "origin": [
+      [
+        "src/p2/ScammerDetailsPage.js",
+        23
+      ]
+    ]
+  },
+  "Any clues about the source of the scam can help police track down the scammer.": {
+    "origin": [
+      [
+        "src/p2/ScammerDetailsPage.js",
+        26
+      ]
+    ]
+  }
+}

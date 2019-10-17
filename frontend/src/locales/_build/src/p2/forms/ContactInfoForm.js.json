@@ -1,0 +1,26 @@
+{
+  "<0>Full name</0>": {
+    "origin": [
+      [
+        "src/p2/forms/ContactInfoForm.js",
+        30
+      ]
+    ]
+  },
+  "<0>Email address</0>": {
+    "origin": [
+      [
+        "src/p2/forms/ContactInfoForm.js",
+        47
+      ]
+    ]
+  },
+  "<0>Postal code</0>": {
+    "origin": [
+      [
+        "src/p2/forms/ContactInfoForm.js",
+        64
+      ]
+    ]
+  }
+}

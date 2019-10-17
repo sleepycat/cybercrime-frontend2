@@ -1,0 +1,26 @@
+{
+  "the impact": {
+    "origin": [
+      [
+        "src/p2/ContactInfoPage.js",
+        18
+      ]
+    ]
+  },
+  "Leave your contact information": {
+    "origin": [
+      [
+        "src/p2/ContactInfoPage.js",
+        22
+      ]
+    ]
+  },
+  "We will use this to send you a confirmation email and to link your report to other reports in your area.": {
+    "origin": [
+      [
+        "src/p2/ContactInfoPage.js",
+        25
+      ]
+    ]
+  }
+}

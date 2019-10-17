@@ -1,0 +1,26 @@
+{
+  "the start page": {
+    "origin": [
+      [
+        "src/p2/TimeFramePage.js",
+        18
+      ]
+    ]
+  },
+  "When did the scam happen?": {
+    "origin": [
+      [
+        "src/p2/TimeFramePage.js",
+        23
+      ]
+    ]
+  },
+  "It’s okay if you don’t know exactly when it took place. You can give your best guess or leave this blank.": {
+    "origin": [
+      [
+        "src/p2/TimeFramePage.js",
+        26
+      ]
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "the timeframe": {
+    "origin": [
+      [
+        "src/p2/WhatHappenedPage.js",
+        21
+      ]
+    ]
+  },
+  "Describe what happened": {
+    "origin": [
+      [
+        "src/p2/WhatHappenedPage.js",
+        25
+      ]
+    ]
+  },
+  "What happened is not your fault. Scammers use a number of techniques to get what they want.": {
+    "origin": [
+      [
+        "src/p2/WhatHappenedPage.js",
+        28
+      ]
+    ]
+  },
+  "Think about including things such as:": {
+    "origin": [
+      [
+        "src/p2/WhatHappenedPage.js",
+        34
+      ]
+    ]
+  },
+  "Which app, website, or device you were using": {
+    "origin": [
+      [
+        "src/p2/WhatHappenedPage.js",
+        38
+      ]
+    ]
+  },
+  "How the scammer contacted you": {
+    "origin": [
+      [
+        "src/p2/WhatHappenedPage.js",
+        41
+      ]
+    ]
+  },
+  "What they promised, threatened, or stole": {
+    "origin": [
+      [
+        "src/p2/WhatHappenedPage.js",
+        44
+      ]
+    ]
+  }
+}

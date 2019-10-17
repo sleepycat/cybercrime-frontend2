@@ -1,0 +1,90 @@
+{
+  "Think about including things such as:": {
+    "origin": [
+      [
+        "src/p2/forms/ScammerDetailsForm.js",
+        73
+      ]
+    ]
+  },
+  "Who the scammer claimed to be": {
+    "origin": [
+      [
+        "src/p2/forms/ScammerDetailsForm.js",
+        77
+      ]
+    ]
+  },
+  "Where they asked you to send things": {
+    "origin": [
+      [
+        "src/p2/forms/ScammerDetailsForm.js",
+        80
+      ]
+    ]
+  },
+  "What language they used to communicate": {
+    "origin": [
+      [
+        "src/p2/forms/ScammerDetailsForm.js",
+        83
+      ]
+    ]
+  },
+  "Any screenshots, messages, or receipts": {
+    "origin": [
+      [
+        "src/p2/forms/ScammerDetailsForm.js",
+        86
+      ]
+    ]
+  },
+  "<0>What do you know about where the scam came from?</0>": {
+    "origin": [
+      [
+        "src/p2/forms/ScammerDetailsForm.js",
+        91
+      ]
+    ]
+  },
+  "Remember to include any email addresses, phone numbers, or website links": {
+    "origin": [
+      [
+        "src/p2/forms/ScammerDetailsForm.js",
+        103
+      ]
+    ]
+  },
+  "Add file": {
+    "origin": [
+      [
+        "src/p2/forms/ScammerDetailsForm.js",
+        147
+      ]
+    ]
+  },
+  "{0, plural, one {# file attached} other {# files attached}}": {
+    "origin": [
+      [
+        "src/p2/forms/ScammerDetailsForm.js",
+        154
+      ]
+    ]
+  },
+  "Describe what this file shows": {
+    "origin": [
+      [
+        "src/p2/forms/ScammerDetailsForm.js",
+        172
+      ]
+    ]
+  },
+  "Remove file": {
+    "origin": [
+      [
+        "src/p2/forms/ScammerDetailsForm.js",
+        191
+      ]
+    ]
+  }
+}

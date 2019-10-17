@@ -1,0 +1,66 @@
+{
+  "Report a scam": {
+    "origin": [
+      [
+        "src/p2/LandingPage.js",
+        20
+      ]
+    ]
+  },
+  "Scams can happen to anyone. They’re not always easy to recognize and new ones are invented every day.": {
+    "origin": [
+      [
+        "src/p2/LandingPage.js",
+        43
+      ]
+    ]
+  },
+  "Before you start, gather what you can about the scam:": {
+    "origin": [
+      [
+        "src/p2/LandingPage.js",
+        50
+      ]
+    ]
+  },
+  "Dates when it took place": {
+    "origin": [
+      [
+        "src/p2/LandingPage.js",
+        54
+      ]
+    ]
+  },
+  "Descriptions of what happened": {
+    "origin": [
+      [
+        "src/p2/LandingPage.js",
+        57
+      ]
+    ]
+  },
+  "Details on where it came from": {
+    "origin": [
+      [
+        "src/p2/LandingPage.js",
+        60
+      ]
+    ]
+  },
+  "Documents, screenshots, or receipts": {
+    "origin": [
+      [
+        "src/p2/LandingPage.js",
+        63
+      ]
+    ]
+  },
+  "Your report helps the RCMP learn about these crimes and helps police across Canada catch cybercriminals.": {
+    "origin": [
+      [
+        "src/p2/LandingPage.js",
+        69
+      ]
+    ]
+  }
+}
