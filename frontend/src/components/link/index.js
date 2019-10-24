@@ -1,11 +1,11 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core'
 import { asAnchor } from '../../utils/asAnchor'
-import { Link as ReachLink } from 'react-router-dom'
+import { Link as ReactRouterLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { Li } from '../list-item'
 
-const BaseLink = asAnchor(ReachLink)
+const BaseLink = asAnchor(ReactRouterLink)
 const BaseAnchor = asAnchor('a')
 
 export const Link = props => (

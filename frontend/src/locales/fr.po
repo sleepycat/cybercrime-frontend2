@@ -1,465 +1,403 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2019-10-09 15:54-0400\n"
+"POT-Creation-Date: 2019-10-22 21:24-0400\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
-"Language: en\n"
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Plural-Forms: \n"
+"Language: fr\n"
 
 #: src/components/buttons-container/index.js:56
 msgid ": Add files"
-msgstr ": Add files"
+msgstr ""
 
 #: src/components/buttons-container/index.js:48
 msgid ": Clues about the suspect"
-msgstr ": Clues about the suspect"
+msgstr ""
 
 #: src/components/buttons-container/index.js:58
 msgid ": Contact information"
-msgstr ": Contact information"
+msgstr ""
 
 #: src/components/buttons-container/index.js:52
 msgid ": Impact of the scam"
-msgstr ": Impact of the scam"
+msgstr ""
 
 #: src/components/buttons-container/index.js:50
 msgid ": Money lost"
-msgstr ": Money lost"
+msgstr ""
 
 #: src/components/buttons-container/index.js:60
 msgid ": Review report"
-msgstr ": Review report"
+msgstr ""
 
 #: src/components/buttons-container/index.js:54
 msgid ": What happened"
-msgstr ": What happened"
+msgstr ""
+
+#: src/components/backbutton/index.js:30
+msgid "<0>&#9664;</0> <1>Back to</1> <2>{children}</2>"
+msgstr ""
 
 #: src/p2/forms/TimeFrameInfoForm.js:59
 msgid "<0>Approximate end</0>"
-msgstr "<0>Approximate end</0>"
+msgstr ""
 
 #: src/p2/forms/TimeFrameInfoForm.js:33
 msgid "<0>Approximate start</0>"
-msgstr "<0>Approximate start</0>"
+msgstr ""
 
 #: src/p2/forms/ContactInfoForm.js:47
 msgid "<0>Email address</0>"
-msgstr "<0>Email address</0>"
+msgstr ""
 
 #: src/p2/forms/ContactInfoForm.js:30
 msgid "<0>Full name</0>"
-msgstr "<0>Full name</0>"
+msgstr ""
 
 #: src/p2/forms/ContactInfoForm.js:64
 msgid "<0>Postal code</0>"
-msgstr "<0>Postal code</0>"
+msgstr ""
 
-#: src/p2/forms/ImpactStatementInfoForm.js:83
+#: src/p2/forms/ImpactStatementInfoForm.js:81
 msgid "<0>Tell us more about how it impacted you.</0>"
-msgstr "<0>Tell us more about how it impacted you.</0>"
+msgstr ""
 
 #: src/p2/forms/ScammerDetailsForm.js:91
 msgid "<0>What do you know about where the scam came from?</0>"
-msgstr "<0>What do you know about where the scam came from?</0>"
+msgstr ""
 
 #: src/p2/forms/WhatHappenedForm.js:25
 msgid "<0>What happened?</0>"
-msgstr "<0>What happened?</0>"
+msgstr ""
 
 #: src/p2/NextSteps.js:89
 msgid "<0>What happens next</0>"
-msgstr "<0>What happens next</0>"
+msgstr ""
 
-#: src/p2/forms/ImpactStatementInfoForm.js:55
+#: src/p2/forms/ImpactStatementInfoForm.js:57
 msgid "<0>What was the impact of the scam?</0>"
-msgstr "<0>What was the impact of the scam?</0>"
+msgstr ""
 
 #: src/p2/NextSteps.js:49
 msgid "<0>Where you can get help</0>"
-msgstr "<0>Where you can get help</0>"
+msgstr ""
 
 #: src/p2/NextSteps.js:106
 msgid "<0>You have other reporting options</0>"
-msgstr "<0>You have other reporting options</0>"
+msgstr ""
 
-#: src/components/backbutton/index.js:30
-msgid "<0>◀</0> <1>Back to</1> <2>{children}</2>"
-msgstr "<0>◀</0> <1>Back to</1> <2>{children}</2>"
-
-#: src/App.js:58
+#: src/App.js:49
 msgid "ALPHA"
-msgstr "ALPHA"
+msgstr ""
 
 #: src/p2/forms/ScammerDetailsForm.js:147
 msgid "Add file"
-msgstr "Add file"
+msgstr ""
 
 #: src/p2/ScammerDetailsPage.js:23
 msgid "Add suspect clues"
-msgstr "Add suspect clues"
+msgstr ""
 
 #: src/p2/ScammerDetailsPage.js:26
 msgid "Any clues about the source of the scam can help police track down the scammer."
-msgstr "Any clues about the source of the scam can help police track down the scammer."
+msgstr ""
 
 #: src/p2/forms/ScammerDetailsForm.js:86
 msgid "Any screenshots, messages, or receipts"
-msgstr "Any screenshots, messages, or receipts"
+msgstr ""
 
 #: src/p2/LandingPage.js:50
 msgid "Before you start, gather what you can about the scam:"
-msgstr "Before you start, gather what you can about the scam:"
+msgstr ""
 
 #: src/components/buttons-container/index.js:81
 msgid "Cancel report"
-msgstr "Cancel report"
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:184
 msgid "Contact"
-msgstr "Contact"
+msgstr ""
 
 #: src/p2/LandingPage.js:54
 msgid "Dates when it took place"
-msgstr "Dates when it took place"
+msgstr ""
 
 #: src/p2/WhatHappenedPage.js:25
 msgid "Describe what happened"
-msgstr "Describe what happened"
+msgstr ""
 
 #: src/p2/forms/ScammerDetailsForm.js:172
 msgid "Describe what this file shows"
-msgstr "Describe what this file shows"
+msgstr ""
 
 #: src/p2/LandingPage.js:57
 msgid "Descriptions of what happened"
-msgstr "Descriptions of what happened"
+msgstr ""
 
 #: src/p2/LandingPage.js:60
 msgid "Details on where it came from"
-msgstr "Details on where it came from"
-
-#: src/p2/forms/ImpactStatementInfoForm.js:22
-msgid "Device or account hacked"
-msgstr "Device or account hacked"
+msgstr ""
 
 #: src/p2/LandingPage.js:63
 msgid "Documents, screenshots, or receipts"
-msgstr "Documents, screenshots, or receipts"
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:30
 msgid "Edit"
-msgstr "Edit"
-
-#: src/p2/ConfirmationSummary.js:188
-msgid "Edit contact information"
-msgstr "Edit contact information"
-
-#: src/p2/ConfirmationSummary.js:158
-msgid "Edit impact"
-msgstr "Edit impact"
-
-#: src/p2/ConfirmationSummary.js:108
-msgid "Edit scammer information"
-msgstr "Edit scammer information"
-
-#: src/p2/ConfirmationSummary.js:45
-msgid "Edit timeframe"
-msgstr "Edit timeframe"
-
-#: src/p2/ConfirmationSummary.js:79
-msgid "Edit what happened"
-msgstr "Edit what happened"
+msgstr ""
 
 #: src/p2/NextSteps.js:73
 msgid "Find tips to protect yourself in the future"
-msgstr "Find tips to protect yourself in the future"
+msgstr ""
 
 #: src/p2/NextSteps.js:84
 msgid "Follow what scams are trending"
-msgstr "Follow what scams are trending"
+msgstr ""
 
 #: src/p2/forms/TimeFrameInfoForm.js:44
 #: src/p2/forms/TimeFrameInfoForm.js:70
 msgid "For example: 2019-04-28"
-msgstr "For example: 2019-04-28"
+msgstr ""
 
-#: src/p2/forms/ImpactStatementInfoForm.js:94
+#: src/p2/forms/ImpactStatementInfoForm.js:92
 msgid "For example: the amount of money, the information taken, what else was affected"
-msgstr "For example: the amount of money, the information taken, what else was affected"
+msgstr ""
 
 #: src/p2/WhatHappenedPage.js:41
 msgid "How the scammer contacted you"
-msgstr "How the scammer contacted you"
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:59
 msgid "If you can, give us an idea of when the scam took place so that police are able to look into it."
-msgstr "If you can, give us an idea of when the scam took place so that police are able to look into it."
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:157
 msgid "Impact"
-msgstr "Impact"
+msgstr ""
 
 #: src/p2/ImpactStatementPage.js:24
 msgid "Impact caused by the scam"
-msgstr "Impact caused by the scam"
-
-#: src/p2/forms/ImpactStatementInfoForm.js:23
-msgid "Information stolen"
-msgstr "Information stolen"
+msgstr ""
 
 #: src/p2/TimeFramePage.js:26
 msgid "It’s okay if you don’t know exactly when it took place. You can give your best guess or leave this blank."
-msgstr "It’s okay if you don’t know exactly when it took place. You can give your best guess or leave this blank."
+msgstr ""
 
 #: src/p2/ContactInfoPage.js:22
 msgid "Leave your contact information"
-msgstr "Leave your contact information"
-
-#: src/p2/forms/ImpactStatementInfoForm.js:24
-msgid "Money lost"
-msgstr "Money lost"
+msgstr ""
 
 #: src/components/buttons-container/index.js:44
 msgid "Next"
-msgstr "Next"
+msgstr ""
 
 #: src/components/buttons-container/index.js:161
 msgid "No"
-msgstr "No"
-
-#: src/p2/forms/ImpactStatementInfoForm.js:28
-msgid "No impact"
-msgstr "No impact"
+msgstr ""
 
 #: src/PageNotFound.js:15
 msgid "Page not found"
-msgstr "Page not found"
+msgstr ""
 
-#: src/App.js:77
+#: src/App.js:68
 msgid "Privacy"
-msgstr "Privacy"
+msgstr ""
 
 #: src/components/buttons-container/index.js:112
 msgid "Prototype 1"
-msgstr "Prototype 1"
+msgstr ""
 
 #: src/components/buttons-container/index.js:117
 msgid "Prototype 2"
-msgstr "Prototype 2"
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:203
 msgid "Provide your contact details so that we can send you a confirmation of your report."
-msgstr "Provide your contact details so that we can send you a confirmation of your report."
+msgstr ""
 
 #: src/p2/forms/ScammerDetailsForm.js:103
 msgid "Remember to include any email addresses, phone numbers, or website links"
-msgstr "Remember to include any email addresses, phone numbers, or website links"
+msgstr ""
 
 #: src/p2/forms/ScammerDetailsForm.js:191
 msgid "Remove file"
-msgstr "Remove file"
+msgstr ""
 
 #: src/p2/LandingPage.js:20
 msgid "Report a scam"
-msgstr "Report a scam"
+msgstr "Signaler une fraude"
 
 #: src/p2/NextSteps.js:112
 msgid "Report directly to the place where the scam happened."
-msgstr "Report directly to the place where the scam happened."
+msgstr ""
 
 #: src/components/buttons-container/index.js:68
 msgid "Report now ❯"
-msgstr "Report now ❯"
+msgstr ""
 
 #: src/p2/NextSteps.js:120
 msgid "Report to the credit bureaus, <0>Equifax</0> and <1>TransUnion</1>, if your identity was stolen."
-msgstr "Report to the credit bureaus, <0>Equifax</0> and <1>TransUnion</1>, if your identity was stolen."
+msgstr ""
 
 #: src/p2/NextSteps.js:115
 msgid "Report to your financial institution, if you lost money."
-msgstr "Report to your financial institution, if you lost money."
-
-#: src/p2/forms/ImpactStatementInfoForm.js:25
-msgid "Reputation damaged"
-msgstr "Reputation damaged"
+msgstr ""
 
 #: src/p2/ConfirmationPage.js:75
 msgid "Review your report"
-msgstr "Review your report"
-
-#: src/p2/forms/ImpactStatementInfoForm.js:26
-msgid "Safety threatened"
-msgstr "Safety threatened"
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:75
 msgid "Scam"
-msgstr "Scam"
+msgstr ""
 
 #: src/p2/LandingPage.js:43
 msgid "Scams can happen to anyone. They’re not always easy to recognize and new ones are invented every day."
-msgstr "Scams can happen to anyone. They’re not always easy to recognize and new ones are invented every day."
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:134
 msgid "Share any details you may know so that police can try to identify suspects."
-msgstr "Share any details you may know so that police can try to identify suspects."
+msgstr ""
 
 #: src/PageNotFound.js:18
 msgid "Sorry, the page you were trying to view does not exist."
-msgstr "Sorry, the page you were trying to view does not exist."
+msgstr ""
 
 #: src/components/stepper/index.js:23
 msgid "Step {activeStep} of {totalSteps}"
-msgstr "Step {activeStep} of {totalSteps}"
+msgstr ""
 
 #: src/components/buttons-container/index.js:42
-msgid "Submit report   ❯"
-msgstr "Submit report   ❯"
+msgid "Submit report &nbsp; ❯"
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:104
 msgid "Suspect"
-msgstr "Suspect"
+msgstr ""
 
 #: src/p2/NextSteps.js:62
 msgid "Talk to someone and get support"
-msgstr "Talk to someone and get support"
+msgstr ""
 
 #: src/p2/forms/WhatHappenedForm.js:36
 msgid "Tell us about it in your own words."
-msgstr "Tell us about it in your own words."
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:89
 msgid "Tell us about your experience so we can stop it from happening again."
-msgstr "Tell us about your experience so we can stop it from happening again."
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:167
 msgid "Tell us how the scam impacted you so that we can better support other people who are affected."
-msgstr "Tell us how the scam impacted you so that we can better support other people who are affected."
+msgstr ""
 
-#: src/App.js:86
+#: src/App.js:77
 msgid "Terms and Conditions"
-msgstr "Terms and Conditions"
+msgstr ""
 
 #: src/p2/NextSteps.js:39
 msgid "Thank you for reporting"
-msgstr "Thank you for reporting"
+msgstr ""
 
 #: src/p2/NextSteps.js:97
 msgid "The RCMP will analyze your report and combine it with others that are similar to help police across Canada track down cybercriminals."
-msgstr "The RCMP will analyze your report and combine it with others that are similar to help police across Canada track down cybercriminals."
+msgstr ""
 
 #: src/p2/WhatHappenedPage.js:34
 #: src/p2/forms/ScammerDetailsForm.js:73
 msgid "Think about including things such as:"
-msgstr "Think about including things such as:"
+msgstr ""
 
-#: src/App.js:61
+#: src/App.js:50
 #: src/components/phase-banner/index.js:27
 msgid "This site will change as we test ideas."
-msgstr "This site will change as we test ideas."
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:41
 msgid "Timeframe"
-msgstr "Timeframe"
+msgstr ""
 
 #: src/components/warning-banner/index.js:26
 msgid "Warning! This is a prototype. It won't actually submit your report to the RCMP."
-msgstr "Warning! This is a prototype. It won't actually submit your report to the RCMP."
+msgstr ""
 
 #: src/p2/ContactInfoPage.js:25
 msgid "We will use this to send you a confirmation email and to link your report to other reports in your area."
-msgstr "We will use this to send you a confirmation email and to link your report to other reports in your area."
+msgstr ""
 
 #: src/p2/NextSteps.js:42
 msgid "We've sent you an email with a summary of your report. Your reference number is <0>#NC300234234</0>."
-msgstr "We've sent you an email with a summary of your report. Your reference number is <0>#NC300234234</0>."
-
-#: src/p2/forms/ImpactStatementInfoForm.js:27
-msgid "Wellbeing affected"
-msgstr "Wellbeing affected"
+msgstr ""
 
 #: src/p2/WhatHappenedPage.js:28
 msgid "What happened is not your fault. Scammers use a number of techniques to get what they want."
-msgstr "What happened is not your fault. Scammers use a number of techniques to get what they want."
+msgstr ""
 
 #: src/p2/forms/ScammerDetailsForm.js:83
 msgid "What language they used to communicate"
-msgstr "What language they used to communicate"
+msgstr ""
 
 #: src/p2/WhatHappenedPage.js:44
 msgid "What they promised, threatened, or stole"
-msgstr "What they promised, threatened, or stole"
+msgstr ""
 
 #: src/p2/TimeFramePage.js:23
 msgid "When did the scam happen?"
-msgstr "When did the scam happen?"
+msgstr ""
 
 #: src/p2/forms/ScammerDetailsForm.js:80
 msgid "Where they asked you to send things"
-msgstr "Where they asked you to send things"
+msgstr ""
 
 #: src/p2/WhatHappenedPage.js:38
 msgid "Which app, website, or device you were using"
-msgstr "Which app, website, or device you were using"
+msgstr ""
 
 #: src/p2/forms/ScammerDetailsForm.js:77
 msgid "Who the scammer claimed to be"
-msgstr "Who the scammer claimed to be"
+msgstr ""
 
 #: src/components/buttons-container/index.js:156
 msgid "Yes"
-msgstr "Yes"
+msgstr ""
 
 #: src/p2/ImpactStatementPage.js:27
 msgid "You're not the only one affected by this scam. Help protect others by telling us how the scam affected you."
-msgstr "You're not the only one affected by this scam. Help protect others by telling us how the scam affected you."
+msgstr ""
 
 #: src/p2/LandingPage.js:69
 msgid "Your report helps the RCMP learn about these crimes and helps police across Canada catch cybercriminals."
-msgstr "Your report helps the RCMP learn about these crimes and helps police across Canada catch cybercriminals."
-
-#: src/LanguageSwitching.js:24
-msgid "loading..."
-msgstr "loading..."
+msgstr ""
 
 #: src/p2/ContactInfoPage.js:18
 msgid "the impact"
-msgstr "the impact"
+msgstr ""
 
 #: src/p2/ScammerDetailsPage.js:19
 msgid "the scam"
-msgstr "the scam"
+msgstr ""
 
 #: src/p2/TimeFramePage.js:18
 msgid "the start page"
-msgstr "the start page"
+msgstr ""
 
 #: src/p2/ImpactStatementPage.js:20
 msgid "the suspect"
-msgstr "the suspect"
+msgstr ""
 
 #: src/p2/WhatHappenedPage.js:21
 msgid "the timeframe"
-msgstr "the timeframe"
+msgstr ""
 
 #: src/p2/ConfirmationPage.js:71
 msgid "your contact information"
-msgstr "your contact information"
-
-#: src/p2/forms/ScammerDetailsForm.js:154
-msgid "{0, plural, one {# file attached} other {# files attached}}"
-msgstr "{0, plural, one {# file attached} other {# files attached}}"
+msgstr ""
 
 #: src/p2/ConfirmationSummary.js:53
 msgid "{startDate} to {endDate}"
-msgstr "{startDate} to {endDate}"
+msgstr ""
 
 #: src/components/buttons-container/index.js:72
-msgid "❮   Report another scam"
-msgstr "❮   Report another scam"
+msgid "❮ &nbsp; Report another scam"
+msgstr ""

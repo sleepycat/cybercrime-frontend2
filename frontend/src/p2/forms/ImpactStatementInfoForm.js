@@ -1,9 +1,9 @@
-/** @jsx jsx */
+import React from 'react'
 import PropTypes from 'prop-types'
-import { css, jsx } from '@emotion/core'
+import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 import { ApolloConsumer } from 'react-apollo'
-import { I18n, i18nMark } from '@lingui/react'
+import { useLingui } from '@lingui/react'
 import { Trans } from '@lingui/macro'
 import { Form, Field } from 'react-final-form'
 import { Checkbox } from '../../components/checkbox'
@@ -18,16 +18,6 @@ import { getImpact } from '../../utils/queriesAndMutations'
 const CheckboxAdapter = finalFormAdapter(Checkbox)
 const TextAreaAdapter = finalFormAdapter(TextArea)
 
-const howWereYouAffected = [
-  i18nMark('Device or account hacked'),
-  i18nMark('Information stolen'),
-  i18nMark('Money lost'),
-  i18nMark('Reputation damaged'),
-  i18nMark('Safety threatened'),
-  i18nMark('Wellbeing affected'),
-  i18nMark('No impact'),
-]
-
 const CheckboxStyle = styled('label')`
   margin-bottom: 8pt;
 `
@@ -40,83 +30,93 @@ const Fieldset = styled('fieldset')`
 const validate = () => {
   return {}
 }
-export const ImpactStatementInfoForm = props => (
-  <ApolloConsumer>
-    {client => (
-      <Form
-        initialValues={getImpact(client)}
-        onSubmit={data => props.onSubmit(client, data)}
-        validate={validate}
-        render={({ handleSubmit }) => (
-          <form onSubmit={handleSubmit}>
-            <Fieldset>
-              <Label htmlFor="howWereYouAffected">
-                <P>
-                  <Trans>
-                    <strong>What was the impact of the scam?</strong>
-                  </Trans>
-                </P>
-              </Label>
 
+export const ImpactStatementInfoForm = props => {
+  const { i18n } = useLingui()
+
+  const howWereYouAffected = [
+    i18n._('Device or account hacked'),
+    i18n._('Information stolen'),
+    i18n._('Money lost'),
+    i18n._('Reputation damaged'),
+    i18n._('Safety threatened'),
+    i18n._('Wellbeing affected'),
+    i18n._('No impact'),
+  ]
+  return (
+    <ApolloConsumer>
+      {client => (
+        <Form
+          initialValues={getImpact(client)}
+          onSubmit={data => props.onSubmit(client, data)}
+          validate={validate}
+          render={({ handleSubmit }) => (
+            <form onSubmit={handleSubmit}>
+              <Fieldset>
+                <Label htmlFor="howWereYouAffected">
+                  <P>
+                    <Trans>
+                      <strong>What was the impact of the scam?</strong>
+                    </Trans>
+                  </P>
+                </Label>
+
+                <div>
+                  {howWereYouAffected.map(key => {
+                    return (
+                      <CheckboxStyle key={key}>
+                        <Field
+                          name="howWereYouAffected"
+                          component={CheckboxAdapter}
+                          type="checkbox"
+                          value={key}
+                          label={i18n._(key)}
+                        />
+                      </CheckboxStyle>
+                    )
+                  })}
+                </div>
+              </Fieldset>
+
+              <Text marginTop={[5, null, 6]}>
+                <Trans>
+                  <strong>Tell us more about how it impacted you.</strong>
+                </Trans>
+              </Text>
+              <Text
+                css={css`
+                  color: gray;
+                `}
+                mt="6px"
+                mb="8px"
+              >
+                <Trans>
+                  For example: the amount of money, the information taken, what
+                  else was affected
+                </Trans>
+              </Text>
               <div>
-                <I18n>
-                  {({ i18n }) =>
-                    howWereYouAffected.map(key => {
-                      return (
-                        <CheckboxStyle key={key}>
-                          <Field
-                            name="howWereYouAffected"
-                            component={CheckboxAdapter}
-                            type="checkbox"
-                            value={key}
-                            label={i18n._(key)}
-                          />
-                        </CheckboxStyle>
-                      )
-                    })
-                  }
-                </I18n>
+                <Field
+                  name="damage"
+                  id="damage"
+                  component={TextAreaAdapter}
+                  height="50px"
+                  width="100%"
+                />
               </div>
-            </Fieldset>
 
-            <Text marginTop={[5, null, 6]}>
-              <Trans>
-                <strong>Tell us more about how it impacted you.</strong>
-              </Trans>
-            </Text>
-            <Text
-              css={css`
-                color: gray;
-              `}
-              mt="6px"
-              mb="8px"
-            >
-              <Trans>
-                For example: the amount of money, the information taken, what
-                else was affected
-              </Trans>
-            </Text>
-            <div>
-              <Field
-                name="damage"
-                id="damage"
-                component={TextAreaAdapter}
-                height="50px"
-                width="100%"
+              <ButtonsContainer
+                buttonLink={false}
+                cancel={true}
+                nextPage="Contact info"
               />
-            </div>
-
-            <ButtonsContainer
-              buttonLink={false}
-              cancel={true}
-              nextPage="Contact info"
-            />
-          </form>
-        )}
-      />
-    )}
-  </ApolloConsumer>
-)
+            </form>
+          )}
+        />
+      )}
+    </ApolloConsumer>
+  )
+}
 
 ImpactStatementInfoForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,

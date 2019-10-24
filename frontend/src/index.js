@@ -1,11 +1,12 @@
 import React from 'react'
+import { I18nProvider } from '@lingui/react'
+import { i18n } from '@lingui/core'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { ApolloProvider } from 'react-apollo'
 import { language } from './ClientResolvers'
-import { LanguageSwitching } from './LanguageSwitching'
 import { ApolloClient } from 'apollo-client'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import { createUploadLink } from 'apollo-upload-client'
@@ -56,11 +57,11 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <LanguageSwitching>
+    <I18nProvider i18n={i18n}>
       <Router>
         <App />
       </Router>
-    </LanguageSwitching>
+    </I18nProvider>
   </ApolloProvider>,
   document.getElementById('root'),
 )

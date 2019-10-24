@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/core'
 import React from 'react'
 import { Trans } from '@lingui/macro'
-import { I18n } from '@lingui/react'
+import { useLingui } from '@lingui/react'
 import { ApolloConsumer } from 'react-apollo'
 import { H2 } from '../components/header'
 import { Text, StyledSpan } from '../components/text'
@@ -25,13 +25,22 @@ const SectionHeader = props => (
   />
 )
 
-const EditButton = props => (
-  <Link type="button" color="black" textAlign="center" {...props}>
-    <Trans>Edit</Trans>
-  </Link>
-)
+const EditButton = ({ path, label }) => {
+  const { i18n } = useLingui()
+  return (
+    <Link
+      type="button"
+      color="black"
+      textAlign="center"
+      to={path}
+      aria-label={i18n._(label)}
+    >
+      <Trans>Edit</Trans>
+    </Link>
+  )
+}
 
-const timeFrameSummary = client => {
+const TimeFrameSummary = ({ client }) => {
   let { startDate, endDate } = getTimeFrame(client)
   startDate = startDate.slice(0, 10)
   endDate = endDate.slice(0, 10)
@@ -39,14 +48,7 @@ const timeFrameSummary = client => {
     <React.Fragment>
       <SectionHeader>
         <Trans>Timeframe</Trans>{' '}
-        <I18n>
-          {({ i18n }) => (
-            <EditButton
-              aria-label={i18n._('Edit timeframe')}
-              to="/p2/timeframe"
-            />
-          )}
-        </I18n>
+        <EditButton label={'Edit timeframe'} path="/timeframe" />
       </SectionHeader>
       {startDate ? (
         <Text>
@@ -66,21 +68,14 @@ const timeFrameSummary = client => {
   )
 }
 
-const whatHappenedSummary = client => {
+const WhatHappenedSummary = ({ client }) => {
   let { whatHappened } = getWhatHappened(client)
 
   return (
     <React.Fragment>
       <SectionHeader>
         <Trans>Scam</Trans>{' '}
-        <I18n>
-          {({ i18n }) => (
-            <EditButton
-              aria-label={i18n._('Edit what happened')}
-              to="/p2/whathappened"
-            />
-          )}
-        </I18n>
+        <EditButton label={'Edit what happened'} path="/whathappened" />
       </SectionHeader>
       {whatHappened ? (
         <Text>{whatHappened}</Text>
@@ -96,20 +91,16 @@ const whatHappenedSummary = client => {
   )
 }
 
-const scammerSummary = client => {
+const ScammerSummary = ({ client }) => {
   const { scammerDetails, files, fileDescriptions } = getScammerDetails(client)
   return (
     <React.Fragment>
       <SectionHeader>
         <Trans>Suspect</Trans>{' '}
-        <I18n>
-          {({ i18n }) => (
-            <EditButton
-              aria-label={i18n._('Edit scammer information')}
-              to="/p2/scammerdetails"
-            />
-          )}
-        </I18n>
+        <EditButton
+          label={'Edit scammer information'}
+          path="/scammerdetails"
+        />
       </SectionHeader>
       {scammerDetails !== '' ||
       files.length > 0 ||
@@ -141,7 +132,8 @@ const scammerSummary = client => {
   )
 }
 
-const impactSummary = client => {
+const ImpactSummary = ({ client }) => {
+  const { i18n } = useLingui()
   let { howWereYouAffected, otherImpact, damage } = getImpact(client)
   if (howWereYouAffected.indexOf('Other impact') > -1) {
     howWereYouAffected = howWereYouAffected.filter(
@@ -150,46 +142,38 @@ const impactSummary = client => {
     howWereYouAffected.push(otherImpact)
   }
   return (
-    <I18n>
-      {({ i18n }) => (
+    <>
+      <SectionHeader>
+        <Trans>Impact</Trans>{' '}
+        <EditButton label={'Edit impact'} path="/impact" />
+      </SectionHeader>
+      {howWereYouAffected.length > 0 || damage !== '' ? (
         <>
-          <SectionHeader>
-            <Trans>Impact</Trans>{' '}
-            <EditButton aria-label={i18n._('Edit impact')} to="/p2/impact" />
-          </SectionHeader>
-          {howWereYouAffected.length > 0 || damage !== '' ? (
-            <>
-              <Text>{howWereYouAffected.map(i => i18n._(i)).join(', ')}</Text>
-              <Text>{damage}</Text>
-            </>
-          ) : (
-            <Text>
-              <Trans>
-                Tell us how the scam impacted you so that we can better support
-                other people who are affected.
-              </Trans>
-            </Text>
-          )}
+          <Text>{howWereYouAffected.map(i => i18n._(i)).join(', ')}</Text>
+          <Text>{damage}</Text>
         </>
+      ) : (
+        <Text>
+          <Trans>
+            Tell us how the scam impacted you so that we can better support
+            other people who are affected.
+          </Trans>
+        </Text>
       )}
-    </I18n>
+    </>
   )
 }
 
-const contactSummary = client => {
+const ContactSummary = ({ client }) => {
   const { fullName, email, phone, postalCode } = getP2ContactInfo(client)
   return (
     <React.Fragment>
       <SectionHeader>
         <Trans>Contact</Trans>{' '}
-        <I18n>
-          {({ i18n }) => (
-            <EditButton
-              aria-label={i18n._('Edit contact information')}
-              to="/p2/contactinfo"
-            />
-          )}
-        </I18n>
+        <EditButton
+          label={'Edit contact information'}
+          path="/contactinfo"
+        />
       </SectionHeader>
       {(fullName + email + phone + postalCode).length > 0 ? (
         <React.Fragment>
@@ -219,11 +203,11 @@ export const ConfirmationSummary = () => (
       })
       return (
         <React.Fragment>
-          {timeFrameSummary(client)}
-          {whatHappenedSummary(client)}
-          {scammerSummary(client)}
-          {impactSummary(client)}
-          {contactSummary(client)}
+          <TimeFrameSummary client={client} />
+          <WhatHappenedSummary client={client} />
+          <ScammerSummary client={client} />
+          <ImpactSummary client={client} />
+          <ContactSummary client={client} />
         </React.Fragment>
       )
     }}

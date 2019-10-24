@@ -3,10 +3,9 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { css, jsx } from '@emotion/core'
 import { ApolloConsumer } from 'react-apollo'
-import { Trans } from '@lingui/macro'
-import { I18n } from '@lingui/react'
 import { Form, Field } from 'react-final-form'
 import { Container } from '../../components/container'
+import { plural, Trans } from '@lingui/macro'
 import { ButtonsContainer } from '../../components/buttons-container'
 import { TextArea } from '../../components/text-area'
 import { Button } from '../../components/button'
@@ -148,17 +147,12 @@ export const ScammerDetailsFormWrapped = props => {
                   </span>
                 </FileUpload>
               </Container>
-              <I18n>
-                {({ i18n }) => (
-                  <H3>
-                    {i18n.plural({
-                      value: files.length,
-                      one: '# file attached',
-                      other: '# files attached',
-                    })}
-                  </H3>
-                )}
-              </I18n>
+              <H3>
+                {plural(files.length, {
+                  one: '# file attached',
+                  other: '# files attached',
+                })}
+              </H3>
 
               <Container>
                 {files.map((f, index) => (
