@@ -26,7 +26,7 @@ export const TopBanner = props => {
           src={i18n.locale === 'en' ? rcmpbrandingeng : rcmpbrandingfre}
           width="300px"
           alt={
-            i18n.language === 'en'
+            i18n.locale === 'en'
               ? 'Royal Canadian Mounted Police'
               : 'Gendarmerie royale du Canada'
           }

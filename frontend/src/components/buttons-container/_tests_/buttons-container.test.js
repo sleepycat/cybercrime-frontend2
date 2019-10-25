@@ -1,4 +1,6 @@
 import React from 'react'
+import { i18n } from '@lingui/core'
+import { I18nProvider } from '@lingui/react'
 import { render, cleanup } from '@testing-library/react'
 import { ThemeProvider } from 'emotion-theming'
 import theme from '../../../theme'
@@ -8,6 +10,10 @@ import {
   ButtonsContainerLanding,
   ButtonsContainerYesNo,
 } from '../'
+import en from '../../../locales/en.js'
+
+i18n.load('en', { en })
+i18n.activate('en')
 
 describe('<ButtonsContainer />', () => {
   afterEach(cleanup)
@@ -16,12 +22,14 @@ describe('<ButtonsContainer />', () => {
     const { getAllByText } = render(
       <MemoryRouter initialEntries={['/']}>
         <ThemeProvider theme={theme}>
-          <ButtonsContainer
-            buttonLink={true}
-            cancel={false}
-            landing={true}
-            route="/p1/scaminfo"
-          />
+          <I18nProvider i18n={i18n}>
+            <ButtonsContainer
+              buttonLink={true}
+              cancel={false}
+              landing={true}
+              route="/p1/scaminfo"
+            />
+          </I18nProvider>
         </ThemeProvider>
       </MemoryRouter>,
     )
@@ -35,11 +43,13 @@ describe('<ButtonsContainer />', () => {
     const { getAllByText } = render(
       <MemoryRouter initialEntries={['/']}>
         <ThemeProvider theme={theme}>
-          <ButtonsContainer
-            buttonLink={false}
-            cancel={true}
-            cancelRoute="/p1/"
-          />
+          <I18nProvider i18n={i18n}>
+            <ButtonsContainer
+              buttonLink={false}
+              cancel={true}
+              cancelRoute="/p1/"
+            />
+          </I18nProvider>
         </ThemeProvider>
       </MemoryRouter>,
     )
@@ -53,7 +63,9 @@ describe('<ButtonsContainer />', () => {
     const { getAllByText } = render(
       <MemoryRouter initialEntries={['/']}>
         <ThemeProvider theme={theme}>
-          <ButtonsContainer buttonLink={false} cancel={true} submit={true} />
+          <I18nProvider i18n={i18n}>
+            <ButtonsContainer buttonLink={false} cancel={true} submit={true} />
+          </I18nProvider>
         </ThemeProvider>
       </MemoryRouter>,
     )
@@ -67,7 +79,9 @@ describe('<ButtonsContainer />', () => {
     const { getAllByText } = render(
       <MemoryRouter initialEntries={['/']}>
         <ThemeProvider theme={theme}>
-          <ButtonsContainerLanding />
+          <I18nProvider i18n={i18n}>
+            <ButtonsContainerLanding />
+          </I18nProvider>
         </ThemeProvider>
       </MemoryRouter>,
     )
@@ -79,9 +93,11 @@ describe('<ButtonsContainer />', () => {
   it('properly renders yes no buttons', () => {
     const { getAllByText } = render(
       <MemoryRouter initialEntries={['/']}>
-        <ThemeProvider theme={theme}>
-          <ButtonsContainerYesNo yesRoute="/yes/" noRoute="/no/" />
-        </ThemeProvider>
+        <I18nProvider i18n={i18n}>
+          <ThemeProvider theme={theme}>
+            <ButtonsContainerYesNo yesRoute="/yes/" noRoute="/no/" />
+          </ThemeProvider>
+        </I18nProvider>
       </MemoryRouter>,
     )
 

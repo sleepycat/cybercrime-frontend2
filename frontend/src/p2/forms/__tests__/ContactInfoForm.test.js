@@ -1,4 +1,5 @@
 import React from 'react'
+import { i18n } from '@lingui/core'
 import { MemoryRouter } from 'react-router-dom'
 import wait from 'waait'
 import { render, fireEvent, cleanup } from '@testing-library/react'
@@ -7,10 +8,11 @@ import { ApolloProvider } from 'react-apollo'
 import { ThemeProvider } from 'emotion-theming'
 import { I18nProvider } from '@lingui/react'
 import { ContactInfoForm } from '../ContactInfoForm'
-import en from '../../../locales/en/messages.js'
+import en from '../../../locales/en.js'
 import theme from '../../../theme'
 
-const catalogs = { en }
+i18n.load('en', { en })
+i18n.activate('en')
 
 const client = {
   readQuery: () => ({
@@ -34,7 +36,7 @@ describe('<ContactInfoForm />', () => {
       <MemoryRouter initialEntries={['/']}>
         <ThemeProvider theme={theme}>
           <MockedProvider mocks={[]} addTypename={false}>
-            <I18nProvider language={'en'} catalogs={catalogs}>
+          <I18nProvider i18n={i18n}>
               <ApolloProvider client={client}>
                 <ContactInfoForm onSubmit={submitMock} />
               </ApolloProvider>
